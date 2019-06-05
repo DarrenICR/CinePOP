@@ -6,6 +6,31 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="android:windowAnimationStyle">
+            @style/Slide_Animation
+        </item>
+
+    </style>
+
+    <style name="Slide_Animation" parent="@android:style/Animation.Activity">
+
+        <item name="android:activityOpenEnterAnimation">
+            @anim/slide_input_right
+        </item>
+
+        <item name="android:activityOpenExitAnimation">
+            @anim/slide_output_left
+        </item>
+
+        <item name="android:activityCloseEnterAnimation">
+            @anim/slide_input_left
+        </item>
+
+        <item name="android:activityCloseExitAnimation">
+            @anim/slide_output_right
+        </item>
+
     </style>
 
 </resources>
