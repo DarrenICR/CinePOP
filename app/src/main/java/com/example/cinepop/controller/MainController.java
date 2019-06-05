@@ -1,5 +1,7 @@
 package com.example.cinepop.controller;
 
+import android.widget.Toast;
+
 import com.example.cinepop.TMDbApi;
 import com.example.cinepop.model.Movie;
 import com.example.cinepop.model.MovieResponse;
@@ -24,22 +26,31 @@ public class MainController {
 
     public void onCreate() {
 
-        Call<MovieResponse> call = restApiMovie.getMovies();
+        if (view.isConnectionAvailable()) {
 
-        call.enqueue(new Callback<MovieResponse>() {
+            Call<MovieResponse> call = restApiMovie.getMovies();
 
-            @Override
-            public void onResponse(Call<MovieResponse> call, Response<MovieResponse> response) {
+            call.enqueue(new Callback<MovieResponse>() {
+                @Override
+                public void onResponse(Call<MovieResponse> call, Response<MovieResponse> response) {
+                    MovieResponse restMovieResponse = response.body();
+                    List<Movie> movieList = restMovieResponse.getResults();
+                    view.showList(movieList);
 
-                MovieResponse restMovieResponse = response.body();
-                List<Movie> movieList = restMovieResponse.getResults();
-                view.showList(movieList);
+                    view.SetStock(movieList);
+                }
 
-            }
+                @Override
+                public void onFailure(Call<MovieResponse> call, Throwable t) {
+                }
+            });
+        }
+        else {
 
-            @Override
-            public void onFailure(Call<MovieResponse> call, Throwable t) {
-            }
-        });
+            List<Movie> movieList = view.GetStock();
+            view.showList(movieList);
+
+            Toast.makeText(MainActivity.getAppContext(), "Aucune connexion internet disponible. Chargement des données récentes.", Toast.LENGTH_SHORT).show();
+        }
     }
 }
