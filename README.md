@@ -46,7 +46,7 @@ https://developers.themoviedb.org/3
 
 - Affichage de la liste des films populaires du moment (affiche, titre, date de sortie, note). 
 
-- MAJ de la list à chaque ouverture de l'application.
+- MAJ de la liste à chaque ouverture de l'application.
 
 Design du logo qui communique parfaitement avec l’essence même de l'application... 
 
@@ -56,12 +56,16 @@ Design du logo qui communique parfaitement avec l’essence même de l'applicati
 
 ## Écran du détail d'un film
 
-- Affichage du résumé du film ("Aladin" dans ce screenshot)
+- Affichage du résumé du film ("Aladin" dans cette capture)
 
 ![alt text](https://user-images.githubusercontent.com/49784324/59019155-c3c47b00-8847-11e9-8cb4-968521a834d8.jpg)
 
 ## Animation entre écrans
 
-- Animation de type décalage gauche-droite entres les 2 écrans
+- Animation de type glissement gauche-droite entres les 2 écrans
 
 ![alt text](https://user-images.githubusercontent.com/49784324/59013127-83f69700-8839-11e9-9f9c-d6836b712ff4.gif)
+
+## Mode hors connexion
+
+- Si l'utilisateur n'a plus accès à internet, l'application charge les dernières données enregistreés.
