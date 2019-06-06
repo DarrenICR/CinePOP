@@ -68,4 +68,4 @@ Design du logo qui communique parfaitement avec l’essence même de l'applicati
 
 ## Mode hors connexion
 
-- Si l'utilisateur n'a plus accès à internet, l'application charge les dernières données enregistreés.
+- Si l'utilisateur n'a plus accès à internet, l'application charge les dernières données enregistrées.
