@@ -58,6 +58,8 @@ Design du logo qui communique parfaitement avec l’essence même de l'applicati
 
 - Affichage du résumé du film. 
 
+![alt text](https://user-images.githubusercontent.com/49784324/59019155-c3c47b00-8847-11e9-8cb4-968521a834d8.jpg)
+
 ## Animation entre écrans
 
 - Animation décalage gauche-droite entres les 2 écrans
