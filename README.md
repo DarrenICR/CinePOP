@@ -52,7 +52,7 @@ Design du logo qui communique parfaitement avec l’essence même de l'applicati
 
 ..."Une invitation au cinéma"
 
-![alt text](https://user-images.githubusercontent.com/49784324/59011787-0b420b80-8836-11e9-93e6-ccf456764d21.gif)
+![alt text](https://user-images.githubusercontent.com/49784324/59020223-d475f080-8849-11e9-8178-25487f8eb675.gif)
 
 ## Écran du détail d'un film
 
