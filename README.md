@@ -56,7 +56,7 @@ Design du logo qui communique parfaitement avec l’essence même de l'applicati
 
 ## Écran du détail d'un film
 
-- Affichage du résumé du film (Aladin)
+- Affichage du résumé du film ("Aladin" dans ce screenshot)
 
 ![alt text](https://user-images.githubusercontent.com/49784324/59019155-c3c47b00-8847-11e9-8cb4-968521a834d8.jpg)
 
